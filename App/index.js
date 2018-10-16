@@ -1,4 +1,4 @@
-import React, { Component, PropTypes, } from 'react';
+import React, { Component } from 'react';
 import {
     AppRegistry,
     StyleSheet,
@@ -39,6 +39,8 @@ class ChartWeb extends Component {
                         ${this.props.guage ? '<script src="https://code.highcharts.com/modules/solid-gauge.js"></script>'
                                       : ''}
                         ${this.props.noDisplayData ? '<script src="https://code.highcharts.com/modules/no-data-to-display.js"></script>'
+                                      : ''}
+                        ${this.props.heatMap ? '<script src="https://code.highcharts.com/modules/heatmap.js"></script>'
                                       : ''}
                         <script src="https://code.highcharts.com/modules/exporting.js"></script>
                         <script>
